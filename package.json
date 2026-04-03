@@ -1,0 +1,20 @@
+{
+  "name": "retro-gaming-store",
+  "version": "1.0.0",
+  "description": "Retro Gaming Store API",
+  "homepage": "https://github.com/rpscastro/retro-gaming-store#readme",
+  "bugs": {
+    "url": "https://github.com/rpscastro/retro-gaming-store/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpscastro/retro-gaming-store.git"
+  },
+  "license": "ISC",
+  "author": "Rafael Castro",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
