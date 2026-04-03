@@ -2,8 +2,8 @@ const swaggerAutogen = require("swagger-autogen")();
 
 const doc = {
   info: {
-    title: "My API",
-    description: "Description",
+    title: "Retro Gaming Store API",
+    description: "API for managing retro gaming products",
   },
   host: "localhost:3000",
   schemes: ["http", "https"],

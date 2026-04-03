@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Description",
+    "title": "Retro Gaming Store API",
+    "description": "API for managing retro gaming products",
     "version": "1.0.0"
   },
   "host": "retro-gaming-store-7q4l.onrender.com",
