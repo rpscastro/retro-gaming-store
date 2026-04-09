@@ -12,6 +12,10 @@ router.use("/users", require("./users"));
 
 router.use("/products", require("./products"));
 
+router.use("/favorites", require("./favorites"));
+
+router.use("/summary", require("./summary"));
+
 // router.get("/login", passport.authenticate("github"), (req, res) => {});
 
 // router.get("/logout", function (req, res, next) {
