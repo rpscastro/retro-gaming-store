@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const summaryValidate = require("../utilities/summary-validation");
-// const auth = require("../utilities/authenticate");
+const auth = require("../utilities/authenticate");
 
 const summaryController = require("../controllers/summary");
 
@@ -11,7 +11,7 @@ router.get("/:id", summaryController.getSummaryById);
 
 router.post(
   "/",
-  //   auth.isAuthenticated,
+  auth.isAuthenticated,
   summaryValidate.addSummaryRules(),
   summaryValidate.checkSummaryData,
   summaryController.createSummary,
@@ -19,14 +19,14 @@ router.post(
 
 router.put(
   "/:id",
-  //  auth.isAuthenticated,
+  auth.isAuthenticated,
   summaryValidate.addSummaryRules(),
   summaryValidate.checkSummaryData,
   summaryController.updateSummary,
 );
 
 router.delete("/:id",
-    // auth.isAuthenticated,
+    auth.isAuthenticated,
     summaryController.deleteSummary);
 
 module.exports = router;

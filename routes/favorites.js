@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const favoriteValidate = require("../utilities/favorite-validation");
-// const auth = require("../utilities/authenticate");
+const auth = require("../utilities/authenticate");
 
 const favoritesController = require("../controllers/favorites");
 
@@ -11,7 +11,7 @@ router.get("/:id", favoritesController.getFavoriteById);
 
 router.post(
   "/",
-  //   auth.isAuthenticated,
+  auth.isAuthenticated,
   favoriteValidate.addFavoriteRules(),
   favoriteValidate.checkFavoriteData,
   favoritesController.createFavorite,
@@ -19,14 +19,14 @@ router.post(
 
 router.put(
   "/:id",
-  //  auth.isAuthenticated,
+  auth.isAuthenticated,
   favoriteValidate.addFavoriteRules(),
   favoriteValidate.checkFavoriteData,
   favoritesController.updateFavorite,
 );
 
 router.delete("/:id",
-    // auth.isAuthenticated,
+    auth.isAuthenticated,
     favoritesController.deleteFavorite);
 
 module.exports = router;
