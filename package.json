@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose --silent"
   },
   "dependencies": {
     "body-parser": "^2.2.2",
